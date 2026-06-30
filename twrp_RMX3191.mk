@@ -14,7 +14,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-LOCAL_PATH := device/realme/RMX3191
+LOCAL_PATH := device/realme/even
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
@@ -24,10 +24,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 # Inherit from our custom product configuration
 $(call inherit-product, vendor/twrp/config/common.mk)
 
-PRODUCT_DEVICE := RMX3191
-PRODUCT_NAME := twrp_RMX3191
+PRODUCT_DEVICE := even
+PRODUCT_NAME := twrp_even
 PRODUCT_BRAND := realme
-PRODUCT_MODEL := RMX3191
+PRODUCT_MODEL := even
 PRODUCT_MANUFACTURER := realme
 
 # Dynamic

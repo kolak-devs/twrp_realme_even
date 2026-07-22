@@ -1,6 +1,6 @@
 <!--
     Input:
-        manifest_isphal.xml
+        manifest_apuware_utils.xml
         manifest_sensor_hidl_v2.xml
         manifest_audio.xml
         manifest_dsds.xml
@@ -20,6 +20,7 @@
         manifest_mmagent.xml
         manifest_dmc.xml
         manifest_apmonitor.xml
+        manifest_nwk_opt.xml
         manifest_composer.xml
         manifest_target_level_r.xml
         manifest.xml
@@ -220,6 +221,16 @@
         <fqname>@2.0::ISensors/default</fqname>
     </hal>
     <hal format="hidl">
+        <name>android.hardware.soundtrigger</name>
+        <transport>hwbinder</transport>
+        <version>2.3</version>
+        <interface>
+            <name>ISoundTriggerHw</name>
+            <instance>default</instance>
+        </interface>
+        <fqname>@2.3::ISoundTriggerHw/default</fqname>
+    </hal>
+    <hal format="hidl">
         <name>android.hardware.tetheroffload.config</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
@@ -274,6 +285,16 @@
         <fqname>@2.0::IApmService/apm_hidl_service</fqname>
     </hal>
     <hal format="hidl">
+        <name>vendor.mediatek.hardware.apuware.utils</name>
+        <transport>hwbinder</transport>
+        <version>2.0</version>
+        <interface>
+            <name>IApuwareUtils</name>
+            <instance>default</instance>
+        </interface>
+        <fqname>@2.0::IApuwareUtils/default</fqname>
+    </hal>
+    <hal format="hidl">
         <name>vendor.mediatek.hardware.atci</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
@@ -294,6 +315,16 @@
         <fqname>@2.2::IBluetoothAudioProvidersFactory/default</fqname>
     </hal>
     <hal format="hidl">
+        <name>vendor.mediatek.hardware.camera.atms</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IATMs</name>
+            <instance>default</instance>
+        </interface>
+        <fqname>@1.0::IATMs/default</fqname>
+    </hal>
+    <hal format="hidl">
         <name>vendor.mediatek.hardware.camera.bgservice</name>
         <transport>hwbinder</transport>
         <version>1.1</version>
@@ -312,6 +343,16 @@
             <instance>internal/0</instance>
         </interface>
         <fqname>@1.0::IISPModule/internal/0</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.mediatek.hardware.camera.postproc</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IPostDevice</name>
+            <instance>internal/0</instance>
+        </interface>
+        <fqname>@1.0::IPostDevice/internal/0</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.mediatek.hardware.composer_ext</name>
@@ -479,6 +520,16 @@
             <instance>default</instance>
         </interface>
         <fqname>@1.1::INvram/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.mediatek.hardware.nwk_opt</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>INwkOpt</name>
+            <instance>default</instance>
+        </interface>
+        <fqname>@1.0::INwkOpt/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.mediatek.hardware.pq</name>

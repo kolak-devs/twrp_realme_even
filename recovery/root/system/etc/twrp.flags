@@ -5,18 +5,6 @@
 /odm_image              emmc    /dev/block/mapper/odm          flags=display="Odm image";flashimg=1;backup=1
 /system_ext             ext4    /dev/block/mapper/system_ext          flags=display="System_ext image";flashimg=1;backup=1
 
-# realme partition
-# /my_product             ext4    /dev/block/mapper/my_product             flags=display="my_product";flashimg=1;backup=1;wipeingui
-# /my_engineering         ext4    /dev/block/mapper/my_engineering         flags=display="my_engineering";flashimg=1;backup=1;wipeingui
-# /my_company             ext4    /dev/block/mapper/my_company             flags=display="my_company";flashimg=1;backup=1;wipeingui
-# /my_carrier             ext4    /dev/block/mapper/my_carrier             flags=display="my_carrier";flashimg=1;backup=1;wipeingui
-# /my_region              ext4    /dev/block/mapper/my_region              flags=display="my_region";flashimg=1;backup=1;wipeingui
-# /my_heytap              ext4    /dev/block/mapper/my_heytap              flags=display="my_heytap";flashimg=1;backup=1;wipeingui
-# /my_stock               ext4    /dev/block/mapper/my_stock               flags=display="my_stock";flashimg=1;backup=1;wipeingui
-# /my_preload             ext4    /dev/block/mapper/my_preload             flags=display="my_preload";flashimg=1;backup=1;wipeingui
-# /my_bigball             ext4    /dev/block/mapper/my_bigball             flags=display="my_bigball";flashimg=1;backup=1;wipeingui
-
-
 # Partitions
 /data            f2fs      /dev/block/by-name/userdata      flags=fileencryption=aes-256-xts:aes-256-cts:v1
 /recovery        emmc      /dev/block/by-name/recovery    flags=backup;flashimg

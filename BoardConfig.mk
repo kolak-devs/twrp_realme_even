@@ -176,6 +176,7 @@ TW_INCLUDE_LOGICAL := my_product my_engineering my_company my_carrier my_region 
 TARGET_USES_MKE2FS := true
 TW_USE_TOOLBOX:= true
 TW_OZIP_DECRYPT_KEY := 0000
+TW_FRAMERATE := 60
 # TW_Y_OFFSET := 50
 # TW_H_OFFSET := -50
 

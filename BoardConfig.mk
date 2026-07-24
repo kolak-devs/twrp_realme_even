@@ -168,7 +168,7 @@ TW_EXTRA_LANGUAGES := true
 TW_INCLUDE_NTFS_3G := true
 TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
 TW_CUSTOM_CPU_TEMP_PATH := /sys/devices/virtual/thermal/thermal_zone3/temp
-TW_CUSTOM_BATTERY_PATH := "/sys/class/power_supply/battery"
+TW_CUSTOM_BATTERY_PATH := "/sys/class/power_supply/battery:capacity"
 TW_MAX_BRIGHTNESS := 2047
 TW_DEFAULT_BRIGHTNESS := 1200
 TW_NO_SCREEN_BLANK := true
@@ -180,6 +180,11 @@ TW_OZIP_DECRYPT_KEY := 0000
 TW_FRAMERATE := 60
 # TW_Y_OFFSET := 50
 # TW_H_OFFSET := -50
+
+
+# PBRP Specific Build Flags
+PB_TORCH_PATH := "/sys/class/flashlight_core/flashlight"
+PB_DISABLE_DEFAULT_DM_VERITY := true
 
 # resetprop and magiskboot
 TW_INCLUDE_RESETPROP := true

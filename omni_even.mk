@@ -20,12 +20,13 @@ LOCAL_PATH := device/realme/even
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 # Inherit from our custom product configuration
-$(call inherit-product, vendor/twrp/config/common.mk)
+$(call inherit-product, vendor/pb/config/common.mk)
 
 PRODUCT_DEVICE := even
-PRODUCT_NAME := twrp_even
+PRODUCT_NAME := omni_even
 PRODUCT_BRAND := realme
 PRODUCT_MODEL := even
 PRODUCT_MANUFACTURER := realme

@@ -185,6 +185,7 @@ TW_FRAMERATE := 60
 # PBRP Specific Build Flags
 PB_TORCH_PATH := "/sys/class/flashlight_core/flashlight"
 PB_DISABLE_DEFAULT_DM_VERITY := true
+PB_DEVICE_RATIO := "20:9"
 
 # resetprop and magiskboot
 TW_INCLUDE_RESETPROP := true
